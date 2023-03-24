@@ -8,6 +8,11 @@ variable "name" {}
    default     = "t3.medium"
  }
 
+variable "k8s_version" {
+   description = "EKS Kubernetes version"
+   default     = "1.21"
+ }
+
  variable "nodes_desired_size" {
    description = "The desired number of EC2 instances."
    default     = 1

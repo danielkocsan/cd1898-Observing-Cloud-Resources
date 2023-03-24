@@ -1,6 +1,6 @@
 resource "aws_eks_cluster" "cluster" {
    name     = "${var.name}-cluster"
-   version  = "1.21"
+   version  = var.k8s_version
    role_arn = aws_iam_role.eks_cluster_role.arn
 
    vpc_config {

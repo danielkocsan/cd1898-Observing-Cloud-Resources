@@ -19,4 +19,5 @@ provider "kubernetes" {
    account            = data.aws_caller_identity.current.account_id
    private_subnet_ids = module.vpc.private_subnet_ids
    vpc_id             = module.vpc.vpc_id
+   k8s_version        = "1.24"
  }
